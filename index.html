@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnifi - Web Design Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: #ecf0f1;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    /* Navigation */
+    nav {
+      background: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Sections */
+    section {
+      background: #333;
+      color: #fff;
+      margin: 20px auto;
+      padding: 40px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      background: #fff;
+      color: #333;
+      border-radius: 8px;
+      overflow: hidden;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #f8f9fa;
+      font-weight: bold;
+    }
+
+    /* Forms */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, select, button {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #ffcc00;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #e6b800;
+    }
+
+    /* Scroll to top button */
+    #scrollTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ffcc00;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      z-index: 100;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Themes */
+    .dark {
+      background: #222;
+      color: #f4f4f4;
+    }
+
+    .fun {
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="../magnifi-high-resolution-logo-transparent.png" alt="Magnifi Logo" class="logo">
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#services">Послуги</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#pricing">Ціни</a></li>
+        <li><a href="#order">Замовити</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="services">
+      <h2>Наші послуги</h2>
+      <ul>
+        <li>Розробка сайтів</li>
+        <li>UI/UX дизайн</li>
+        <li>SEO оптимізація</li>
+        <li>Брендинг</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>Наші роботи</h2>
+      <div class="gallery-grid">
+        <img src="https://muffingroup.com/blog/wp-content/uploads/2023/04/Galileo-1.png" alt="Робота 1">
+        <img src="https://weblium.com/blog/wp-content/uploads/2021/03/Best-Websites.png" alt="Робота 2">
+        <img src="https://www.impactplus.com/hubfs/Fensea.jpg" alt="Робота 3">
+        <img src="https://weblium.com/blog/wp-content/uploads/2019/05/imgonline-com-ua-Compressed-d1kmrjYkKW.jpg" alt="Робота 4">
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Прайс</h2>
+      <table>
+        <tr>
+          <th>Послуга</th>
+          <th>Ціна</th>
+        </tr>
+        <tr>
+          <td>Лендінг</td>
+          <td>$200</td>
+        </tr>
+        <tr>
+          <td>Інтернет-магазин</td>
+          <td>$500</td>
+        </tr>
+        <tr>
+          <td>Редизайн</td>
+          <td>$150</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Розрахувати вартість</h2>
+      <form id="calculator">
+        <label>Тип сайту:</label>
+        <select id="siteType">
+          <option value="200">Лендінг — $200</option>
+          <option value="500">Інтернет-магазин — $500</option>
+          <option value="150">Редизайн — $150</option>
+        </select>
+
+        <div>
+          <label><input type="checkbox" value="50"> SEO — $50</label>
+          <label><input type="checkbox" value="70"> Брендинг — $70</label>
+        </div>
+
+        <p><strong>Сума: <span id="total">$200</span></strong></p>
+      </form>
+    </section>
+
+    <section id="order">
+      <h2>Замовити сайт</h2>
+      <form id="orderForm">
+        <input type="text" placeholder="Ваше ім'я" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Опишіть, що вам потрібно..."></textarea>
+        <button type="submit">Відправити</button>
+      </form>
+    </section>
+
+    <section>
+      <label for="theme">Оберіть тему:</label>
+      <select id="theme">
+        <option value="light">Світла</option>
+        <option value="dark">Темна</option>
+        <option value="fun">Весела</option>
+      </select>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Magnifi Studio. Всі права захищено.</p>
+  </footer>
+
+  <button id="scrollTop">↑</button>
+
+  <script>
+    // Theme switcher
+    document.getElementById('theme').addEventListener('change', function() {
+      document.body.className = this.value;
+    });
+
+    // Price calculator
+    const calculator = document.getElementById('calculator');
+    const total = document.getElementById('total');
+    
+    function updatePrice() {
+      const sitePrice = parseInt(document.getElementById('siteType').value);
+      const extras = [...calculator.querySelectorAll('input:checked')]
+        .reduce((sum, input) => sum + parseInt(input.value), 0);
+      total.textContent = `$${sitePrice + extras}`;
+    }
+    
+    calculator.addEventListener('change', updatePrice);
+
+    // Form submission
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Форма відправлена!');
+    });
+
+    // Scroll to top
+    const scrollBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
